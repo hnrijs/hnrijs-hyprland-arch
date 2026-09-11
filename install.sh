@@ -4,23 +4,23 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-if ! command -v git &>/dev/null; then
+if ! command -v git &> /dev/null; then
   sudo pacman -Sy --noconfirm git
 fi
 
 mkdir -p "$HOME/Documents" "$HOME/Music" "$HOME/Downloads" "$HOME/Pictures/Wallpapers" "$HOME/Videos" "$HOME/.config"
 
 sudo pacman -S --needed --noconfirm \
-  base-devel wget dolphin imv btop playerctl alacritty zip unzip polkit-kde-agent ark \
+  base-devel wget thunar rofi-wayland imv btop playerctl alacritty zip unzip polkit-gnome \
   wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-emoji ttf-nerd-fonts-symbols \
   gtk3 pavucontrol nwg-look mpv brightnessctl nano android-udev \
-  power-profiles-daemon python-gobject hyprland xdg-desktop-portal-hyprland hyprlock hypridle hyprpicker \
+  power-profiles-daemon python-gobject hyprland hyprlock hypridle hyprpicker waybar wdisplays \
   lightdm lightdm-gtk-greeter dunst aria2 jdk-openjdk \
-  curl jq xdg-utils libnotify librewolf imagemagick audacious kdegraphics-thumbnailers ffmpegthumbs \
+  curl jq xdg-utils libnotify librewolf imagemagick audacious ffmpegthumbnailer \
   ttf-dejavu ttf-font-awesome noto-fonts monolith \
-  noto-fonts-cjk udisks2 kio-extras dolphin-plugins redshift \
+  noto-fonts-cjk gvfs gvfs-mtp udisks2 thunar-volman redshift \
   signal-desktop obs-studio proton-vpn-gtk-app \
-  less neovim vim ripgrep fd lazygit fastfetch yt-dlp \
+  less neovim ripgrep fd lazygit tumbler fastfetch yt-dlp \
   fzf ncdu python-requests exiftool speedtest-cli krita gimp nodejs npm \
   iwd openssh qt5-wayland qt6-wayland smartmontools uwsm wireless_tools
 
@@ -65,4 +65,3 @@ sudo systemctl enable lightdm
 
 sleep 5
 sudo reboot
-
