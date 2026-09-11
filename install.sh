@@ -11,10 +11,10 @@ fi
 mkdir -p "$HOME/Documents" "$HOME/Music" "$HOME/Downloads" "$HOME/Pictures/Wallpapers" "$HOME/Videos" "$HOME/.config"
 
 sudo pacman -S --needed --noconfirm \
-  base-devel wget thunar rofi-wayland imv btop playerctl alacritty zip unzip polkit-gnome \
+  base-devel wget thunar imv btop playerctl alacritty zip unzip polkit-gnome \
   wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-emoji ttf-nerd-fonts-symbols \
   gtk3 pavucontrol nwg-look mpv brightnessctl nano android-udev \
-  power-profiles-daemon python-gobject hyprland hyprlock hypridle hyprpicker waybar wdisplays \
+  power-profiles-daemon python-gobject hyprland hyprlock hypridle hyprpicker \
   lightdm lightdm-gtk-greeter dunst aria2 jdk-openjdk \
   curl jq xdg-utils libnotify librewolf imagemagick audacious ffmpegthumbnailer \
   ttf-dejavu ttf-font-awesome noto-fonts monolith \
