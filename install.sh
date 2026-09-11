@@ -14,14 +14,14 @@ sudo pacman -S --needed --noconfirm \
   base-devel wget thunar imv btop playerctl alacritty zip unzip polkit-gnome \
   wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-emoji ttf-nerd-fonts-symbols \
   gtk3 pavucontrol nwg-look mpv brightnessctl nano android-udev \
-  power-profiles-daemon python-gobject hyprland hyprlock hypridle hyprpicker \
+  power-profiles-daemon python-gobject hyprland xdg-desktop-portal-hyprland hyprlock hypridle hyprpicker \
   lightdm lightdm-gtk-greeter dunst aria2 jdk-openjdk \
   curl jq xdg-utils libnotify librewolf imagemagick audacious ffmpegthumbnailer \
   ttf-dejavu ttf-font-awesome noto-fonts monolith \
   noto-fonts-cjk gvfs gvfs-mtp udisks2 thunar-volman redshift \
   signal-desktop obs-studio proton-vpn-gtk-app \
   less neovim ripgrep fd lazygit tumbler fastfetch yt-dlp \
-  fzf ncdu python-requests exiftool speedtest-cli krita gimp nodejs npm xdg-desktop-portal-hyprland
+  fzf ncdu python-requests exiftool speedtest-cli krita gimp nodejs npm
 
 if [ -d "$SCRIPT_DIR/theme" ]; then
   sudo mkdir -p /usr/share/themes
