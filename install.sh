@@ -21,7 +21,7 @@ sudo pacman -S --needed --noconfirm \
   noto-fonts-cjk gvfs gvfs-mtp udisks2 thunar-volman redshift \
   signal-desktop obs-studio proton-vpn-gtk-app \
   less neovim ripgrep fd lazygit tumbler fastfetch yt-dlp \
-  fzf ncdu python-requests exiftool speedtest-cli krita gimp nodejs npm
+  fzf ncdu python-requests exiftool speedtest-cli krita gimp nodejs npm xdg-desktop-portal-hyprland
 
 if [ -d "$SCRIPT_DIR/theme" ]; then
   sudo mkdir -p /usr/share/themes
