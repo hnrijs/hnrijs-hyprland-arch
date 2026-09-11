@@ -11,16 +11,16 @@ fi
 mkdir -p "$HOME/Documents" "$HOME/Music" "$HOME/Downloads" "$HOME/Pictures/Wallpapers" "$HOME/Videos" "$HOME/.config"
 
 sudo pacman -S --needed --noconfirm \
-  base-devel wget thunar imv btop playerctl alacritty zip unzip polkit-gnome \
+  base-devel wget dolphin imv btop playerctl alacritty zip unzip polkit-kde-agent ark \
   wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-emoji ttf-nerd-fonts-symbols \
   gtk3 pavucontrol nwg-look mpv brightnessctl nano android-udev \
-  power-profiles-daemon python-gobject hyprland xdg-desktop-portal-hyprland hyprlock hypridle hyprpicker \
+  power-profiles-daemon python-gobject xdg-desktop-portal-hyprland hyprlock hypridle hyprpicker \
   lightdm lightdm-gtk-greeter dunst aria2 jdk-openjdk \
-  curl jq xdg-utils libnotify librewolf imagemagick audacious ffmpegthumbnailer \
+  curl jq xdg-utils libnotify librewolf imagemagick audacious kdegraphics-thumbnailers ffmpegthumbs \
   ttf-dejavu ttf-font-awesome noto-fonts monolith \
-  noto-fonts-cjk gvfs gvfs-mtp udisks2 thunar-volman redshift \
+  noto-fonts-cjk udisks2 kio-extras dolphin-plugins redshift \
   signal-desktop obs-studio proton-vpn-gtk-app \
-  less neovim ripgrep fd lazygit tumbler fastfetch yt-dlp \
+  less neovim ripgrep fd lazygit fastfetch yt-dlp \
   fzf ncdu python-requests exiftool speedtest-cli krita gimp nodejs npm
 
 if [ -d "$SCRIPT_DIR/theme" ]; then
