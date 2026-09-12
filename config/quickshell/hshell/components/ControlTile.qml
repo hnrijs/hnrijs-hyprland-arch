@@ -1,0 +1,60 @@
+import QtQuick
+import QtQuick.Controls
+import qs
+
+Button {
+    id: root
+    property string symbol: ""
+    property string detail: ""
+    property bool selected: false
+    implicitHeight: 72
+    padding: 12
+    hoverEnabled: true
+    focusPolicy: Qt.TabFocus
+    background: Rectangle {
+        radius: 23
+        color: root.selected ? Style.activeFill : root.hovered ? Style.bg3 : Style.bg1
+        border.width: root.visualFocus ? 2 : 0
+        border.color: Style.primary
+    }
+    contentItem: Item {
+        Rectangle {
+            x: 0
+            anchors.verticalCenter: parent.verticalCenter
+            width: 38
+            height: 38
+            radius: 19
+            color: root.selected ? "#d9d9df" : Style.bg3
+            Text {
+                anchors.centerIn: parent
+                text: root.symbol
+                font.family: Style.fontFamily
+                font.pixelSize: 18
+                color: root.selected ? Style.activeText : Style.foreground
+            }
+        }
+        Text {
+            x: 48
+            y: 5
+            width: parent.width - 48
+            height: 20
+            text: root.text
+            font.family: Style.fontFamily
+            font.pixelSize: 14
+            font.bold: true
+            color: root.selected ? Style.activeText : Style.foreground
+            elide: Text.ElideRight
+        }
+        Text {
+            x: 48
+            y: 27
+            width: parent.width - 48
+            height: 18
+            text: root.detail
+            font.family: Style.fontFamily
+            font.pixelSize: 11
+            color: root.selected ? Style.activeText : Style.muted
+            elide: Text.ElideRight
+        }
+    }
+}
