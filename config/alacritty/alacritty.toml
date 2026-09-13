@@ -19,31 +19,26 @@ style = "Bold"
 family = "JetBrainsMono Nerd Font"
 style = "Italic"
 
-
-
 [colors.primary]
-background = "#1a1b26"
-foreground = "#c0caf5"
-
-
-
+background = "#141414"
+foreground = "#dfdfdf"
 
 [colors.normal]
-black   = "#15161e"
-red     = "#f7768e"
-green   = "#9ece6a"
-yellow  = "#e0af68"
-blue    = "#7aa2f7"
-magenta = "#bb9af7"
-cyan    = "#7dcfff"
-white   = "#a9b1d6"
+black   = "#141414"
+red     = "#f44336"
+green   = "#4caf50"
+yellow  = "#ffeb3b"
+blue    = "#2196f3"
+magenta = "#9c27b0"
+cyan    = "#00bcd4"
+white   = "#dfdfdf"
 
 [colors.bright]
-black   = "#444b6a"
-blue    = "#7da6ff"
-cyan    = "#0db9d7"
-green   = "#b9f27c"
-magenta = "#bb9af7"
-red     = "#ff7a93"
-white   = "#acb0d0"
-yellow  = "#ff9e64"
+black   = "#3c3c3c"
+red     = "#ff5252"
+green   = "#69f0ae"
+yellow  = "#ffff00"
+blue    = "#40c4ff"
+magenta = "#e040fb"
+cyan    = "#18ffff"
+white   = "#ffffff"
